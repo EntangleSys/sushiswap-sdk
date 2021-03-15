@@ -1,5 +1,7 @@
 import JSBI from 'jsbi'
 
+import { GANACHE_CONFIG } from './ganache'
+
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string
 
@@ -17,7 +19,8 @@ export enum ChainId {
   BSC = 56,
   BSC_TESTNET = 97,
   ARBITRUM = 79377087078960,
-  MOONBASE = 1287
+  MOONBASE = 1287,
+  GANACHE = 1337
 }
 
 export enum TradeType {
@@ -31,7 +34,7 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const INIT_CODE_HASH: string = '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303'
+export const INIT_CODE_HASH: string = GANACHE_CONFIG.INIT_CODE_HASH
 
 export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
@@ -47,7 +50,8 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.BSC_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: '0x2Ce3F07dD4c62b56a502E223A7cBE38b1d77A1b5'
+  [ChainId.MOONBASE]: '0x2Ce3F07dD4c62b56a502E223A7cBE38b1d77A1b5',
+  [ChainId.GANACHE]: GANACHE_CONFIG.FACTORY_ADDRESS
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -64,7 +68,8 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.BSC_TESTNET]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: '0xeB5c2BB5E83B51d83F3534Ae21E84336B8B376ef'
+  [ChainId.MOONBASE]: '0xeB5c2BB5E83B51d83F3534Ae21E84336B8B376ef',
+  [ChainId.GANACHE]: GANACHE_CONFIG.ROUTER_ADDRESS
 }
 
 export const SUSHI_ADDRESS: { [chainId in ChainId]: string } = {
@@ -81,7 +86,8 @@ export const SUSHI_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: ''
+  [ChainId.MOONBASE]: '',
+  [ChainId.GANACHE]: GANACHE_CONFIG.SUSHI_ADDRESS,
 }
 
 export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
@@ -98,7 +104,8 @@ export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: ''
+  [ChainId.MOONBASE]: '',
+  [ChainId.GANACHE]: GANACHE_CONFIG.MASTERCHEF_ADDRESS,
 }
 
 export const BAR_ADDRESS: { [chainId in ChainId]: string } = {
@@ -115,7 +122,8 @@ export const BAR_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: ''
+  [ChainId.MOONBASE]: '',
+  [ChainId.GANACHE]: '',
 }
 
 export const MAKER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -132,7 +140,8 @@ export const MAKER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: ''
+  [ChainId.MOONBASE]: '',
+  [ChainId.GANACHE]: '',
 }
 
 export const TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
@@ -149,7 +158,8 @@ export const TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
   [ChainId.ARBITRUM]: '',
-  [ChainId.MOONBASE]: ''
+  [ChainId.MOONBASE]: '',
+  [ChainId.GANACHE]: GANACHE_CONFIG.TIMELOCK_ADDRESS ,
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)

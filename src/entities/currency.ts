@@ -39,7 +39,8 @@ export class Currency {
     [ChainId.BSC]: Currency.BNB,
     [ChainId.BSC_TESTNET]: Currency.BNB,
     [ChainId.ARBITRUM]: Currency.ETHER,
-    [ChainId.MOONBASE]: Currency.GLMR
+    [ChainId.MOONBASE]: Currency.GLMR,
+    [ChainId.GANACHE]: Currency.ETHER,
   }
 
   /**

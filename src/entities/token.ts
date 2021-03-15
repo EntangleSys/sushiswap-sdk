@@ -2,7 +2,7 @@ import invariant from 'tiny-invariant'
 import { ChainId } from '../constants'
 import { validateAndParseAddress } from '../utils'
 import { Currency } from './currency'
-
+import { GANACHE_CONFIG } from '../ganache'
 /**
  * Represents an ERC20 token with a unique address and some metadata.
  */
@@ -123,6 +123,13 @@ export const WETH = {
   [ChainId.MOONBASE]: new Token(
     ChainId.MOONBASE,
     '0xe73763DB808ecCDC0E36bC8E32510ED126910394',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.GANACHE]: new Token(
+    ChainId.GANACHE,
+    GANACHE_CONFIG.WETH,
     18,
     'WETH',
     'Wrapped Ether'
