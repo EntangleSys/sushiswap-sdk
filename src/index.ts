@@ -14,11 +14,11 @@ export {
   BAR_ADDRESS,
   MAKER_ADDRESS,
   TIMELOCK_ADDRESS,
-  MINIMUM_LIQUIDITY
+  MINIMUM_LIQUIDITY,
+  GANACHE_CONFIG
 } from './constants'
 
 export * from './errors'
 export * from './entities'
 export * from './router'
 export * from './fetcher'
-export * from './ganache'

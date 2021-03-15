@@ -1,6 +1,6 @@
 import JSBI from 'jsbi'
 
-import { GANACHE_CONFIG } from './ganache'
+export const GANACHE_CONFIG = require('./ganache.json')
 
 // exports for external consumption
 export type BigintIsh = JSBI | bigint | string

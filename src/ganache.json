@@ -1,0 +1,61 @@
+{
+    "INIT_CODE_HASH": "0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f",
+    "RPC": "http://127.0.0.1:7545",
+    "MULTICALL_ADDRESS": "0x0b1a27c12b5F797818B32aB307860E5180af1D77",
+    "ROUTER_ADDRESS": "0xa18D5817A073eDE4fDE2D42815c6b70Da3bc80e8",
+    "FACTORY_ADDRESS": "0xf8d9273fDb65EA44BA4Ca4E05BC30e2fe10D4569",
+    "MASTERCHEF_ADDRESS": "0xB5C67e5752fE22E3754f1201a6b302fAb2cB5cd0",
+    "TIMELOCK_ADDRESS": "0x7A95ba69493733D7fF024c859434786a5235226e",
+    "SUSHI_ADDRESS": "0x31D6c0a1435D63e3D878944459A5809F0052fd6E",
+    "WETH": "0x5a5d7761Ca4Ff6F6014DeF3561Ba8EACa4AFD843",
+    "tokens": [{
+        "address": "0x31D6c0a1435D63e3D878944459A5809F0052fd6E",
+        "chainId": 1337,
+        "name": "SushiSwap",
+        "symbol": "SUSHI",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/logo.png"
+    }, {
+        "address": "0x23E92914E5D5d5f6db5F0d671D6d9e2226B04E1A",
+        "chainId": 1337,
+        "name": "Cash",
+        "symbol": "CASH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x87eDfFDe3E14c7a66c9b9724747a1C5696b742e6/logo.png"
+    }, {
+        "address": "0x56Cdf4e6514894D43B63A36378a290633EDa51f5",
+        "chainId": 1337,
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
+    }, {
+        "address": "0x5a5d7761Ca4Ff6F6014DeF3561Ba8EACa4AFD843",
+        "chainId": 1337,
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "decimals": 18,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+    }, {
+        "name": "USDA",
+        "symbol": "USDA",
+        "address": "0x7443feFc1e0DDe13369F61E4111c481e72deF0b9",
+        "chainId": 1337,
+        "decimals": 6,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+    }, {
+        "name": "USDB",
+        "symbol": "USDB",
+        "address": "0x0C60E929A47c433FC0266e77D2cbCa2921e14192",
+        "chainId": 1337,
+        "decimals": 6,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+    }, {
+        "name": "USDC",
+        "symbol": "USDC",
+        "address": "0x80B51929A3529e2BB8C3C8a754c909a7479401df",
+        "chainId": 1337,
+        "decimals": 6,
+        "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+    }]
+}

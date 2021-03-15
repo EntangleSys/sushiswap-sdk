@@ -2,7 +2,7 @@ import invariant from 'tiny-invariant'
 import { ChainId } from '../constants'
 import { validateAndParseAddress } from '../utils'
 import { Currency } from './currency'
-import { GANACHE_CONFIG } from '../ganache'
+const GANACHE_CONFIG = require('./ganache.json')
 /**
  * Represents an ERC20 token with a unique address and some metadata.
  */
